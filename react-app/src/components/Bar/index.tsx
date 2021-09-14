@@ -38,11 +38,6 @@ const Bar:React.FC<Props>=(props)=>{
     let obj={};
     let index=0;
     let count=0;
-    // let style={
-    //     'pink':'backgroundColor:#DD7776',
-    //     'green':'backgroundColor:#9CD28E',
-    //     'grey':'backgroundColor:#9CD28E'
-    // }
 
     let colorStyle = {
             backgroundColor: props.color

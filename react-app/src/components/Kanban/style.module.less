@@ -1,0 +1,112 @@
+.kanban {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F3F4;
+    .kanban_list {
+        flex: 1;
+        margin: 0 auto;
+        border: 1px dashed grey;
+        & > div {
+            margin: 0 auto;
+        } 
+    }
+}
+
+.list {
+    background-color: #F1F3F4;
+    height: 100vh;
+    width: 80%;
+    overflow: auto;
+
+    .list_add {
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px dashed grey;
+        &:hover{
+            color: blue;
+        }
+    }
+    .list_title {
+        height: 40px;
+        line-height: 40px;
+        font-size: x-large;
+    }
+}
+
+.card {
+    margin: 20px 0 20px 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .head {
+        position: relative;
+        .show_btn {
+            position: absolute;
+            top: 7px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid black;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+        .hide_btn {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid black;
+        }
+        .title {
+            input {
+                margin-left: 20px;
+                font-weight: bold;
+                outline: none;
+                border: 0;
+                width: 80%;
+            }
+        }
+        .title_content {
+            textarea {
+                border: 0;
+                outline: none;
+                font-size: x-small;
+                word-break: break-all;
+                width: 90%;
+                font-weight: bold;
+                font-size: large;
+                color: grey;
+            }
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed black;
+        }
+    }
+    .content  {
+
+    }
+    .hide_content {
+        display: none;
+    }
+}
+
+.checklist {
+    margin-top: 20px;
+    width: 100%;
+    .checklist_input {
+        text-align: center;
+        border: 1px dashed grey;
+        height: 40px;
+        line-height: 40px;
+        input {
+            text-align: center;
+            outline: none;
+            border: 0px;
+        }
+    }
+}
+
